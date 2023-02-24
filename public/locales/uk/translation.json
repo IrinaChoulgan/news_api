@@ -1,0 +1,17 @@
+{
+  "titleHome": "Домашня",
+  "titleNews": "Новини",
+  "titleProfile": "Профіль",
+  "textForUser": "Ласкаво просимо",
+  "loginBtn": "Увійти",
+  "errorPage": "Помилка",
+  "textErrorPage": "Перейти на домашню сторінку",
+  "homeText": "Привіт, це домашня сторінка",
+  "profileText": "Привіт, це твоя сторінка профілю",
+  "newsBtn": "Видалити цю новину",
+  "loadBtn": "Завантажити більше",
+  "titleLoginForm": "Увійти",
+  "inputName": "Ім'я",
+  "inputPassword": "Пароль",
+  "formBtn": "Увійти"
+}

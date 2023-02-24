@@ -1,7 +1,9 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-function Profile() {
-  return <h1>This is Profile page</h1>;
-}
+const Profile = () => {
+  const { t } = useTranslation();
+
+  return <h1>{t('profileText')}</h1>;
+};
 
 export default Profile;
