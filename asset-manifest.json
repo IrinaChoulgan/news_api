@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/news_api/static/css/main.b3eeeea7.css",
+    "main.js": "/news_api/static/js/main.b0458985.js",
+    "static/media/news.png": "/news_api/static/media/news.79746212275b5d4e171a.png",
+    "static/media/usa.png": "/news_api/static/media/usa.4d9d990626a3df96a265.png",
+    "static/media/ukraine.png": "/news_api/static/media/ukraine.4980fa991424d2079663.png",
+    "index.html": "/news_api/index.html",
+    "static/media/getFetch.cjs": "/news_api/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.b3eeeea7.css.map": "/news_api/static/css/main.b3eeeea7.css.map",
+    "main.b0458985.js.map": "/news_api/static/js/main.b0458985.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3eeeea7.css",
+    "static/js/main.b0458985.js"
+  ]
+}

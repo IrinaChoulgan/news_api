@@ -1,0 +1,17 @@
+{
+  "titleHome": "HOME",
+  "titleNews": "NEWS",
+  "titleProfile": "PROFILE",
+  "errorPage": "Error page",
+  "textErrorPage": "Go to home page",
+  "textForUser": "Welcome",
+  "homeText": "Hello,this is Home page",
+  "loginBtn": "Login",
+  "profileText": "Hello, this is your Profile page",
+  "newsBtn": "Delete this news",
+  "loadBtn": "Load more",
+  "titleLoginForm": "Sign up",
+  "inputName": "Name",
+  "inputPassword": "Password",
+  "formBtn": "Sign in"
+}
