@@ -1,12 +1,11 @@
 import i18n from 'i18next';
 import XHR from 'i18next-xhr-backend';
 import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 i18n
   .use(Backend)
-  .use(LanguageDetector)
+  .use(XHR)
   .use(initReactI18next)
   .init({
     loadPath: '/locales/{{lng}}/{{ns}}.json',
