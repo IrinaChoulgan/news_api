@@ -34,7 +34,7 @@ const items = createReducer(initState, {
     ...action.payload,
   ],
   [deleteNewsSuccess.type]: (state, action: PayloadAction<News[]>) =>
-    state.filter(news => news.id !== action.payload),
+    state.filter(news => news.id !== Number(action.payload)),
 });
 
 const loading = createReducer(false, {
