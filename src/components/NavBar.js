@@ -18,7 +18,7 @@ import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 function NavBar() {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (language) => {
+  const changeLanguage = language => {
     i18n.changeLanguage(language);
   };
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ function NavBar() {
     }
   }, [user]);
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     localStorage.clear();
     setName('');
     navigate('/');
@@ -66,7 +66,11 @@ function NavBar() {
           <Box style={{ marginLeft: 'auto' }}>
             {name && pwd && name !== '' && pwd !== '' ? (
               <Box>
-                <Typography variant="p" component="span" style={{ marginRight: '20px' }}>
+                <Typography
+                  variant="p"
+                  component="span"
+                  style={{ marginRight: '20px' }}
+                >
                   {t('textForUser')},{user}
                 </Typography>
 

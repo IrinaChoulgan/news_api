@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import operations from '../../redux/operations';
+// @ts-ignore
+import operations from '../../redux/operations.tsx';
 import { getNews, getLoading } from '../../redux/selectors';
 import { useTranslation } from 'react-i18next';
 
@@ -29,7 +30,7 @@ function News() {
     setPage(page + 1);
   };
 
-  const handleClickOnDeleteBtn = (id) => {
+  const handleClickOnDeleteBtn = id => {
     dispatch(operations.deleteNews(id));
   };
 
@@ -37,14 +38,34 @@ function News() {
     <>
       <Grid container spacing={2} style={{ marginTop: '50px' }}>
         {news?.map((news, index) => (
-          <Card sx={{ width: 275 }} key={index} style={{ padding: '10px', margin: '10px' }}>
+          <Card
+            sx={{ width: 275 }}
+            key={index}
+            style={{ padding: '10px', margin: '10px', position: 'relative' }}
+          >
             <CardContent>
-              <Typography variant="h5" component="div">
+              <Typography
+                sx={{ fontSize: 14 }}
+                color="text.secondary"
+                gutterBottom
+                style={{ marginBottom: '10px' }}
+              >
                 {news.title}
+              </Typography>
+              <Typography
+                variant="h5"
+                component="div"
+                style={{ marginBottom: '10px', fontSize: '16px' }}
+              >
+                {news.body}
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" onClick={() => handleClickOnDeleteBtn(news.id)}>
+              <Button
+                size="small"
+                style={{ bottom: '5px', position: 'absolute' }}
+                onClick={() => handleClickOnDeleteBtn(news.id)}
+              >
                 {t('newsBtn')}
               </Button>
             </CardActions>
@@ -55,7 +76,11 @@ function News() {
         {loading ? (
           <Sceleton />
         ) : (
-          <Button variant="contained" onClick={handleClick}>
+          <Button
+            variant="contained"
+            onClick={handleClick}
+            style={{ marginTop: '20px' }}
+          >
             {t('loadBtn')}
           </Button>
         )}

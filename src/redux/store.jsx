@@ -1,18 +1,25 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
-import reducer from './reducer';
-import { FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
+import reducer from './reducer.tsx';
+import {
+  FLUSH,
+  REHYDRATE,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+} from 'redux-persist';
 
 const middleware = [
   ...getDefaultMiddleware({
     serializableCheck: {
-      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
-    }
-  })
+      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+    },
+  }),
 ];
 
 const store = configureStore({
   reducer: { news: reducer },
-  middleware
+  middleware,
 });
 
 export default store;

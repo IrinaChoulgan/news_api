@@ -11,7 +11,14 @@ export default function Error() {
   const { t } = useTranslation();
 
   return (
-    <Box style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '100px' }}>
+    <Box
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '100px',
+      }}
+    >
       <Card sx={{ minWidth: 275 }}>
         <CardContent>
           <Typography variant="h5" component="div">
