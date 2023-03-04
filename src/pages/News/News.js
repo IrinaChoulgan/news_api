@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// @ts-ignore
 import operations from '../../redux/operations.tsx';
 import { getNews, getLoading } from '../../redux/selectors';
 import { useTranslation } from 'react-i18next';

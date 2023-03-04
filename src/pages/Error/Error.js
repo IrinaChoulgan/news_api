@@ -7,7 +7,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
-export default function Error() {
+function Error() {
   const { t } = useTranslation();
 
   return (
@@ -32,3 +32,5 @@ export default function Error() {
     </Box>
   );
 }
+
+export default Error;

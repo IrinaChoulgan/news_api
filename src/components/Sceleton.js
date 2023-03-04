@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Skeleton from '@mui/material/Skeleton';
 
-export default function Sceleton() {
+function Sceleton() {
   return (
     <Box style={{ margin: 'auto' }}>
       <Skeleton />
@@ -11,3 +11,5 @@ export default function Sceleton() {
     </Box>
   );
 }
+
+export default Sceleton;

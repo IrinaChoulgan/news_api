@@ -11,7 +11,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-export default function Login() {
+function Login() {
   const { t } = useTranslation();
 
   const navigate = useNavigate();
@@ -87,3 +87,5 @@ export default function Login() {
     </Container>
   );
 }
+
+export default Login;
